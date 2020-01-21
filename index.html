@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=main, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="header">Javascript Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#basics">Basics</a></li>
+        <li><a class="nav-link" href="#comments">Comments</a></li>
+        <li><a class="nav-link" href="#declarations">Declarations</a></li>
+        <li>
+          <a class="nav-link" href="#data_structures_&_types"
+            >Data Structures & Types</a
+          >
+        </li>
+        <li><a class="nav-link" href="#literals">Literals</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="basics">
+        <header>Basics</header>
+        <p>
+          JavaScript borrows most of its syntax from Java, C, and C++, but it
+          has also been influenced by Awk, Perl, and Python. JavaScript is
+          case-sensitive and uses the Unicode character set. For example, the
+          word Früh (which means "early" in German) could be used as a variable
+          name.
+        </p>
+        <code>let Früh = "foobar"</code>
+        <p>
+          But, the variable früh is not the same as Früh because JavaScript is
+          case sensitive. In JavaScript, instructions are called statements and
+          are separated by semicolons (;).
+        </p>
+
+        <p>
+          A semicolon is not necessary after a statement if it is written on its
+          own line. But if more than one statement on a line is desired, then
+          they must be separated by semicolons.
+        </p>
+        <p>
+          It is considered best practice, however, to always write a semicolon
+          after a statement, even when it is not strictly needed. This practice
+          reduces the chances of bugs getting into the code.
+        </p>
+        <p>
+          The source text of JavaScript script gets scanned from left to right,
+          and is converted into a sequence of input elements which are tokens,
+          control characters, line terminators, comments, or whitespace.
+          (Spaces, tabs, and newline characters are considered whitespace.)
+        </p>
+      </section>
+      <hr />
+      <section class="main-section" id="comments">
+        <header>Comments</header>
+        <p>
+          The syntax of comments is the same as in C++ and in many other
+          languages:
+        </p>
+
+        <code>// a one line comment</code>
+        <br />
+        <code>/* this is a longer, </code>
+        <br />
+        <code> * multi-line comment</code>
+        <br />
+        <code> */</code>
+        <br />
+        <code> /* You can't, however, /* nest comments */ SyntaxError */</code>
+        <br />
+
+        <p>
+          Comments behave like whitespace, and are discarded during script
+          execution.
+        </p>
+      </section>
+      <hr />
+      <section class="main-section" id="declarations">
+        <header>Declarations</header>
+        <p>
+          JavaScript has three kinds of variable declarations :
+        </p>
+        <ul class="ul-list-body">
+          <li>
+            var - Declares a variable, optionally initializing it to a value.
+          </li>
+          <li>
+            let - Declares a block-scoped, local variable, optionally
+            initializing it to a value.
+          </li>
+          <li>const - Declares a block-scoped, read-only named constant</li>
+        </ul>
+      </section>
+      <hr />
+      <section class="main-section" id="data_structures_&_types">
+        <header>Data Structures & Types</header>
+        <p>There are 7 different types of data structure :</p>
+        <ol class="ol-list-body">
+          <li>Boolean. true and false.</li>
+          <li>
+            null. A special keyword denoting a null value. (Because JavaScript
+            is case-sensitive, null is not the same as Null, NULL, or any other
+            variant.)
+          </li>
+          <li>undefined. A top-level property whose value is not defined.</li>
+          <li>
+            Number. An integer or floating point number. For example: 42 or
+            3.14159.
+          </li>
+          <li>
+            BigInt. An integer with arbitrary precision. For example:
+            9007199254740992n.
+          </li>
+          <li>
+            String. A sequence of characters that represent a text value. For
+            example: "Howdy"
+          </li>
+          <li>
+            Symbol (new in ECMAScript 2015). A data type whose instances are
+            unique and immutable.
+          </li>
+          <p>and Object</p>
+        </ol>
+      </section>
+      <hr />
+      <section class="main-section" id="literals">
+        <header>Literals</header>
+        <p>
+          Literals represent values in JavaScript. These are fixed values—not
+          variables—that you literally provide in your script. This section
+          describes the following types of literals:
+        </p>
+        <ul class="ul-list-body">
+          <li>Array literals</li>
+          <li>Boolean literals</li>
+          <li>Floating-point literals</li>
+          <li>Numeric literals</li>
+          <li>Object literals</li>
+          <li>RegExp literals</li>
+          <li>String literals</li>
+        </ul>
+      </section>
+      <hr />
+    </main>
+  </body>
+</html>
